@@ -702,6 +702,13 @@ append_archive(struct bsdtar *bsdtar, struct archive *a, struct archive *ina)
 		if (need_report())
 			report_write(bsdtar, a, in_entry, 0);
 
+		/*
+		 * Rewrite the pathname to be archived.  If rewrite
+		 * fails, skip the entry.
+		 */
+		if (edit_pathname(bsdtar, in_entry))
+			continue;
+
 		e = archive_write_header(a, in_entry);
 		if (e != ARCHIVE_OK) {
 			if (!bsdtar->verbose)

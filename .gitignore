@@ -60,6 +60,7 @@ Testing/
 libarchive/libarchive.a
 libarchive/libarchive.so
 libarchive/libarchive.so.*
+libarchive/libarchive_static.a
 
 .DS_Store
 
@@ -71,3 +72,5 @@ test-suite.log
 
 .sw?
 .*.sw?
+
+compile_commands.json

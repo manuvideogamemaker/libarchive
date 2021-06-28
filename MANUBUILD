@@ -1,0 +1,12 @@
+Install and configure CMake
+
+Install MinGW-W64
+- https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/installer/mingw-w64-install.exe/download?use_mirror=deac-fra&download=&failedmirror=kumisystems.dl.sourceforge.net
+- on the Settings page specify i686 Architecture
+- choose default installation folder
+
+Install GnuWin32
+- zlib: download "Binaries" and "Developer files" zip-archives from http://gnuwin32.sourceforge.net/packages/zlib.htm and put them into C:\Program Files\GnuWin32
+- pcre: download "Binaries" and "Developer files" zip-archives from http://gnuwin32.sourceforge.net/packages/pcre.htm and put them into C:\Program Files\GnuWin32
+
+Build target bsdtar with i686-w64-mingw32 kit
